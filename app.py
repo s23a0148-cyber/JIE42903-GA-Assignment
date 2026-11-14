@@ -1,10 +1,12 @@
-
 import streamlit as st
 import pandas as pd
 import random
 
-# Application title
-st.title("TV Program Scheduling using Genetic Algorithm")
+st.set_page_config(
+    page_title="Genetic Algorithm"
+)
+
+st.header("Genetic Algorithm", divider="gray")
 
 # Load modified program ratings
 df = pd.read_csv('modified_program_ratings.csv')
